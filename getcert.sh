@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+DOCKER=`which docker`
+[ ${#DOCKER} -eq 0 ] && echo "ERROR: docker not found, please install it first." && exit -1
 COMPOSER=`which docker-compose`
 [ ${#COMPOSER} -eq 0 ] && echo "ERROR: docker-compose not found, please install it first." && exit -1
 SCRIPTROOT=$( cd $(dirname $0) ; pwd)
