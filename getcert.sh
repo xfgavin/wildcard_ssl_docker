@@ -20,14 +20,14 @@ then
     echo -n "Your domain?"
     read domain
   done
-  while [ "$apikey" = "" ]
+  while [ "$apitoken" = "" ]
   do
-    echo -n "cloudflare API key of your domain? "
-    read apikey
+    echo -n "cloudflare API token of your domain? "
+    read apitoken
   done
 cat << APIKEY > etc/cloudflare.ini
 # Cloudflare API credentials used by Certbot
-dns_cloudflare_api_token = $apikey
+dns_cloudflare_api_token = $apitoken
 APIKEY
 
 cat << CONFIG > docker_compose.yml
