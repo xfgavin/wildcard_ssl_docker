@@ -30,7 +30,7 @@ cat << APIKEY > etc/cloudflare.ini
 dns_cloudflare_api_token = $apitoken
 APIKEY
 
-cat << CONFIG > docker_compose.yml
+cat << CONFIG > docker-compose.yml
 version: '2'
 services:
    ssl:
