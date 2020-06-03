@@ -1,5 +1,5 @@
 # wildcard_ssl_docker
-Let's encrypt wildcard certificate via certbot docker on raspberry Pi
+Get Let's encrypt's wildcard certificate via certbot docker image on raspberry Pi
 
 ## Prerequisite:
 1. docker
